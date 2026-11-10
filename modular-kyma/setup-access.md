@@ -1,10 +1,6 @@
-To connect to the KCP cluster using Kyma Dashboard, follow these steps:
+To connect to the KCP cluster using Kyma dashboard, follow these steps:
 
-1. Open proxy to the Kubernetes API server:
-
-```
-kubectl proxy --address='0.0.0.0' --accept-hosts='.*' &
-```{{execute}}
+1. Open a proxy to the Kubernetes API server:
 
 2. Copy the kubeconfig:
 
@@ -26,6 +22,6 @@ users:
 - name: kubernetes-admin
   user:
     token: tokentokentoken
-```{{copy}}
+```
 
-3. Open [Kyma Dashboard](https://dashboard.kyma.cloud.sap), press the  **Connect cluster** button,and paste the kubeconfig in the relevant space. Select **Next step** and **Connect cluster**.
+3. Open [Kyma Dashboard](https://dashboard.kyma.cloud.sap), press the  **Connect cluster** button, and paste the kubeconfig into the relevant field. Select **Next step** and **Connect cluster**.
